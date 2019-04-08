@@ -1,0 +1,70 @@
+ <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="/mp4/lego.mp4" type="video/mp4">
+  </video>
+
+  <div class="masthead">
+    <div class="masthead-bg"></div>
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 my-auto">
+          <div class="masthead-content text-white py-5 py-md-0">
+            
+            <P class="mb-7">  <strong>Unmatched Indoor Go Karting Experience</strong> </P>
+            <h1 class="mb-3">Coming Soon!</h1>
+            <p class="mb-5">We're working hard to finish the development of this site. Our target launch date is
+              <strong>December 2019</strong>! Sign up for updates using the form below!</p>
+            <div class="input-group input-group-newsletter">
+      <input id="input"autocomplete="off" type="email" name="Email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
+      <div class="input-group-append">
+          <button onclick="myFunction(input.name)" id="notifyMe"  class="btn btn-secondary" type="button">Notify Me!</button>
+      </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <ul class="list-unstyled text-center mb-0">
+      <li class="list-unstyled-item">
+        <a href="#" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="list-unstyled-item">
+        <a href="#" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li class="list-unstyled-item">
+        <a href="https://www.instagram.com/vannahgokarts/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/coming-soon.min.js"></script>
+
+  <script>
+
+
+
+
+function myFunction(name) {
+   $.post("http://localhost:4000",
+  {
+    email: name,
+    
+  }
+  );
+}
+  </script>
