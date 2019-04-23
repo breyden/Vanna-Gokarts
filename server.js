@@ -13,6 +13,11 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use(bodyParser.json())
 
+app.use(express.static(__dirname + '/mp4'));
+app.use(express.static(__dirname + '/vendor'));
+app.use(express.static(__dirname + '/css'));
+
+
 app.set('views',path.join(__dirname,'/views/'))
 app.engine('hbs',exphb({extname:'hbs',defaultLayout:'index',layoutsDir:__dirname+'/views/layouts'}));
 app.set('view engine','hbs');
